@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HealthCare Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">HealthCare Hub</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with us today.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="contact-wrapper">
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <h2>Send us a Message</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service" required>
+                            <option value="">-- Select Service --</option>
+                            <option value="General Consultation">General Consultation</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="Wellness Program">Wellness Program</option>
+                            <option value="Lab Test">Lab Test</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointment">Preferred Appointment Date</label>
+                        <input type="datetime-local" id="appointment" name="appointment" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell us more about your inquiry..."></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-btn">Send Message</button>
+                    <div id="formMessage"></div>
+                </form>
+            </section>
+
+            <!-- Contact Information -->
+            <section class="contact-info-section">
+                <h2>Contact Information</h2>
+                
+                <div class="info-box">
+                    <h4>📞 Phone</h4>
+                    <p>+1-234-567-8900</p>
+                    <p class="small">Available 24/7 for emergencies</p>
+                </div>
+
+                <div class="info-box">
+                    <h4>📧 Email</h4>
+                    <p>info@healthcarehub.com</p>
+                    <p>support@healthcarehub.com</p>
+                    <p class="small">Response time: within 24 hours</p>
+                </div>
+
+                <div class="info-box">
+                    <h4>📍 Location</h4>
+                    <p>123 Healthcare Avenue</p>
+                    <p>Medical City, MC 12345</p>
+                    <p class="small">Main clinic location</p>
+                </div>
+
+                <div class="info-box">
+                    <h4>🕐 Working Hours</h4>
+                    <p><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</p>
+                    <p><strong>Saturday:</strong> 9:00 AM - 2:00 PM</p>
+                    <p><strong>Sunday:</strong> Closed</p>
+                    <p><strong>Emergencies:</strong> 24/7</p>
+                </div>
+
+                <div class="info-box">
+                    <h4>💬 Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">View All Services</a></li>
+                        <li><a href="about.html">Meet Our Team</a></li>
+                        <li><a href="index.html">Health Tips</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h4 onclick="toggleFAQ(this)">How do I book an appointment?</h4>
+                    <p>You can book an appointment by filling out the form on this page, calling us at +1-234-567-8900, or visiting our clinic in person.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 onclick="toggleFAQ(this)">Do you accept insurance?</h4>
+                    <p>Yes, we accept major health insurance plans. Please contact us to confirm your specific plan coverage.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 onclick="toggleFAQ(this)">What is the average wait time?</h4>
+                    <p>Our average wait time is 10-15 minutes. We strive to see patients on time and minimize waiting periods.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 onclick="toggleFAQ(this)">Is parking available?</h4>
+                    <p>Yes, we have ample parking available for our patients. Parking is free for all clinic visitors.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 onclick="toggleFAQ(this)">Can I get medical records from here?</h4>
+                    <p>Yes, patients can request their medical records. Please submit a written request to our administrative office.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>About Us</h5>
+                    <p>HealthCare Hub is committed to providing quality healthcare services to our community.</p>
+                </div>
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Contact Info</h5>
+                    <p>Phone: +1-234-567-8900</p>
+                    <p>Email: info@healthcarehub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HealthCare Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const isOpen = answer.style.display === 'block';
+            answer.style.display = isOpen ? 'none' : 'block';
+        }
+
+        // Contact Form Handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formMessage = document.getElementById('formMessage');
+            const name = document.getElementById('name').value;
+            
+            formMessage.innerHTML = '<p style="color: green; margin-top: 10px;">✓ Thank you ' + name + '! Your message has been sent successfully. We will contact you soon.</p>';
+            this.reset();
+            
+            setTimeout(() => {
+                formMessage.innerHTML = '';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
